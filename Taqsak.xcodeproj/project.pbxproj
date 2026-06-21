@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		2C5DEFDB2FE82BC600B147A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C5DEFC52FE82BC300B147A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C5DEFCC2FE82BC300B147A4;
+			remoteInfo = Taqsak;
+		};
+		2C5DEFE52FE82BC600B147A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C5DEFC52FE82BC300B147A4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C5DEFCC2FE82BC300B147A4;
+			remoteInfo = Taqsak;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C5DEFCD2FE82BC300B147A4 /* Taqsak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Taqsak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C5DEFDA2FE82BC600B147A4 /* TaqsakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaqsakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C5DEFE42FE82BC600B147A4 /* TaqsakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaqsakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		2C5DEFCF2FE82BC300B147A4 /* Taqsak */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Taqsak;
+			sourceTree = "<group>";
+		};
+		2C5DEFDD2FE82BC600B147A4 /* TaqsakTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TaqsakTests;
+			sourceTree = "<group>";
+		};
+		2C5DEFE72FE82BC600B147A4 /* TaqsakUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TaqsakUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C5DEFCA2FE82BC300B147A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C5DEFD72FE82BC600B147A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C5DEFE12FE82BC600B147A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C5DEFC42FE82BC300B147A4 = {
+			isa = PBXGroup;
+			children = (
+				2C5DEFCF2FE82BC300B147A4 /* Taqsak */,
+				2C5DEFDD2FE82BC600B147A4 /* TaqsakTests */,
+				2C5DEFE72FE82BC600B147A4 /* TaqsakUITests */,
+				2C5DEFCE2FE82BC300B147A4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C5DEFCE2FE82BC300B147A4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C5DEFCD2FE82BC300B147A4 /* Taqsak.app */,
+				2C5DEFDA2FE82BC600B147A4 /* TaqsakTests.xctest */,
+				2C5DEFE42FE82BC600B147A4 /* TaqsakUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C5DEFCC2FE82BC300B147A4 /* Taqsak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C5DEFEE2FE82BC600B147A4 /* Build configuration list for PBXNativeTarget "Taqsak" */;
+			buildPhases = (
+				2C5DEFC92FE82BC300B147A4 /* Sources */,
+				2C5DEFCA2FE82BC300B147A4 /* Frameworks */,
+				2C5DEFCB2FE82BC300B147A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				2C5DEFCF2FE82BC300B147A4 /* Taqsak */,
+			);
+			name = Taqsak;
+			packageProductDependencies = (
+			);
+			productName = Taqsak;
+			productReference = 2C5DEFCD2FE82BC300B147A4 /* Taqsak.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C5DEFD92FE82BC600B147A4 /* TaqsakTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C5DEFF12FE82BC600B147A4 /* Build configuration list for PBXNativeTarget "TaqsakTests" */;
+			buildPhases = (
+				2C5DEFD62FE82BC600B147A4 /* Sources */,
+				2C5DEFD72FE82BC600B147A4 /* Frameworks */,
+				2C5DEFD82FE82BC600B147A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C5DEFDC2FE82BC600B147A4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2C5DEFDD2FE82BC600B147A4 /* TaqsakTests */,
+			);
+			name = TaqsakTests;
+			packageProductDependencies = (
+			);
+			productName = TaqsakTests;
+			productReference = 2C5DEFDA2FE82BC600B147A4 /* TaqsakTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C5DEFE32FE82BC600B147A4 /* TaqsakUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C5DEFF42FE82BC600B147A4 /* Build configuration list for PBXNativeTarget "TaqsakUITests" */;
+			buildPhases = (
+				2C5DEFE02FE82BC600B147A4 /* Sources */,
+				2C5DEFE12FE82BC600B147A4 /* Frameworks */,
+				2C5DEFE22FE82BC600B147A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C5DEFE62FE82BC600B147A4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				2C5DEFE72FE82BC600B147A4 /* TaqsakUITests */,
+			);
+			name = TaqsakUITests;
+			packageProductDependencies = (
+			);
+			productName = TaqsakUITests;
+			productReference = 2C5DEFE42FE82BC600B147A4 /* TaqsakUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C5DEFC52FE82BC300B147A4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					2C5DEFCC2FE82BC300B147A4 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					2C5DEFD92FE82BC600B147A4 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 2C5DEFCC2FE82BC300B147A4;
+					};
+					2C5DEFE32FE82BC600B147A4 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 2C5DEFCC2FE82BC300B147A4;
+					};
+				};
+			};
+			buildConfigurationList = 2C5DEFC82FE82BC300B147A4 /* Build configuration list for PBXProject "Taqsak" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C5DEFC42FE82BC300B147A4;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 2C5DEFCE2FE82BC300B147A4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C5DEFCC2FE82BC300B147A4 /* Taqsak */,
+				2C5DEFD92FE82BC600B147A4 /* TaqsakTests */,
+				2C5DEFE32FE82BC600B147A4 /* TaqsakUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C5DEFCB2FE82BC300B147A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C5DEFD82FE82BC600B147A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C5DEFE22FE82BC600B147A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C5DEFC92FE82BC300B147A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C5DEFD62FE82BC600B147A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C5DEFE02FE82BC600B147A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C5DEFDC2FE82BC600B147A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C5DEFCC2FE82BC300B147A4 /* Taqsak */;
+			targetProxy = 2C5DEFDB2FE82BC600B147A4 /* PBXContainerItemProxy */;
+		};
+		2C5DEFE62FE82BC600B147A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C5DEFCC2FE82BC300B147A4 /* Taqsak */;
+			targetProxy = 2C5DEFE52FE82BC600B147A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2C5DEFEC2FE82BC600B147A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C5DEFED2FE82BC600B147A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C5DEFEF2FE82BC600B147A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nageh.Taqsak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C5DEFF02FE82BC600B147A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nageh.Taqsak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C5DEFF22FE82BC600B147A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nageh.TaqsakTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Taqsak.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Taqsak";
+			};
+			name = Debug;
+		};
+		2C5DEFF32FE82BC600B147A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nageh.TaqsakTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Taqsak.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Taqsak";
+			};
+			name = Release;
+		};
+		2C5DEFF52FE82BC600B147A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nageh.TaqsakUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Taqsak;
+			};
+			name = Debug;
+		};
+		2C5DEFF62FE82BC600B147A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nageh.TaqsakUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Taqsak;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C5DEFC82FE82BC300B147A4 /* Build configuration list for PBXProject "Taqsak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C5DEFEC2FE82BC600B147A4 /* Debug */,
+				2C5DEFED2FE82BC600B147A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C5DEFEE2FE82BC600B147A4 /* Build configuration list for PBXNativeTarget "Taqsak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C5DEFEF2FE82BC600B147A4 /* Debug */,
+				2C5DEFF02FE82BC600B147A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C5DEFF12FE82BC600B147A4 /* Build configuration list for PBXNativeTarget "TaqsakTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C5DEFF22FE82BC600B147A4 /* Debug */,
+				2C5DEFF32FE82BC600B147A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C5DEFF42FE82BC600B147A4 /* Build configuration list for PBXNativeTarget "TaqsakUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C5DEFF52FE82BC600B147A4 /* Debug */,
+				2C5DEFF62FE82BC600B147A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C5DEFC52FE82BC300B147A4 /* Project object */;
+}
