@@ -9,9 +9,19 @@ import SwiftUI
 
 @main
 struct TaqsakApp: App {
+    
+    @State private var showSplash = true
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            if showSplash {
+                SplashView {showSplash = false}
+            }
+            else{
+                ContentView()
+            }
+            
         }
     }
 }
