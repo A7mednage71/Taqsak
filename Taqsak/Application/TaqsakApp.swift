@@ -19,7 +19,7 @@ struct TaqsakApp: App {
                 SplashView {showSplash = false}
             }
             else{
-                ContentView()
+                HomeView()
             }
             
         }
