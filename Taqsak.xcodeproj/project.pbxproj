@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2C768E0B2FEA1730003F1771 /* Shimmer in Frameworks */ = {isa = PBXBuildFile; productRef = 2C768E0A2FEA1730003F1771 /* Shimmer */; };
+		2CAF4CAF2FEA009400FA6452 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 2CAF4CAE2FEA009400FA6452 /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		2C5DEFDB2FE82BC600B147A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C768E0B2FEA1730003F1771 /* Shimmer in Frameworks */,
+				2CAF4CAF2FEA009400FA6452 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,7 @@
 				2C5DEFCF2FE82BC300B147A4 /* Taqsak */,
 				2C5DEFDD2FE82BC600B147A4 /* TaqsakTests */,
 				2C5DEFE72FE82BC600B147A4 /* TaqsakUITests */,
+				2CAF4CAD2FEA009400FA6452 /* Frameworks */,
 				2C5DEFCE2FE82BC300B147A4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +98,13 @@
 				2C5DEFE42FE82BC600B147A4 /* TaqsakUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		2CAF4CAD2FEA009400FA6452 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +127,8 @@
 			);
 			name = Taqsak;
 			packageProductDependencies = (
+				2CAF4CAE2FEA009400FA6452 /* Alamofire */,
+				2C768E0A2FEA1730003F1771 /* Shimmer */,
 			);
 			productName = Taqsak;
 			productReference = 2C5DEFCD2FE82BC300B147A4 /* Taqsak.app */;
@@ -195,6 +212,10 @@
 			);
 			mainGroup = 2C5DEFC42FE82BC300B147A4;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2CAF4CA62FE9FBBF00FA6452 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				2CAF4CB22FEA07A400FA6452 /* XCRemoteSwiftPackageReference "swiftui-Shimmer" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2C5DEFCE2FE82BC300B147A4 /* Products */;
 			projectDirPath = "";
@@ -550,6 +571,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2CAF4CA62FE9FBBF00FA6452 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.12.0;
+			};
+		};
+		2CAF4CB22FEA07A400FA6452 /* XCRemoteSwiftPackageReference "swiftui-Shimmer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/markiv/swiftui-Shimmer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C768E0A2FEA1730003F1771 /* Shimmer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CAF4CB22FEA07A400FA6452 /* XCRemoteSwiftPackageReference "swiftui-Shimmer" */;
+			productName = Shimmer;
+		};
+		2CAF4CAE2FEA009400FA6452 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2CAF4CA62FE9FBBF00FA6452 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2C5DEFC52FE82BC300B147A4 /* Project object */;
 }

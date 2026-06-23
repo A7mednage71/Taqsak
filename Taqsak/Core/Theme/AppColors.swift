@@ -22,7 +22,7 @@ struct AppColors {
         endPoint: .bottom
     )
     
-    static let cardBackground = Color.white.opacity(0.15)
+    static let cardBackground = Color.white.opacity(0.32)
     
     static func getFontColor(isMorning: Bool) -> Color {
         return isMorning ? .black : .white
