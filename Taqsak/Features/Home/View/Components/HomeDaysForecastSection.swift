@@ -22,13 +22,17 @@ struct HomeDaysForecastSection: View {
             ForEach(Array(forecast.forecastday.enumerated()), id: \.element.id) { index, day in
                 let dayLabel = index == 0 ? "Today" : (index == 1 ? "Tomorrow" : "After tomorrow")
                 
-                DayForecastItem(
-                    dayName: dayLabel,
-                    iconUrl: "https:\(day.day.condition.icon)",
-                    tempRange: "\(Int(day.day.mintempC))° - \(Int(day.day.maxtempC))°",
-                    isLast: index == forecast.forecastday.count - 1,
-                    isMorning: isMorning
-                )
+                NavigationLink(destination: HourlyForecastView( dayName: dayLabel, hours: day.hour, isMorning: isMorning)) {
+                    DayForecastItem(
+                        dayName: dayLabel,
+                        iconUrl: "https:\(day.day.condition.icon)",
+                        tempRange: "\(Int(day.day.mintempC))° - \(Int(day.day.maxtempC))°",
+                        isLast: index == forecast.forecastday.count - 1,
+                        isMorning: isMorning
+                    )
+                }
+                .buttonStyle(.plain)
+
             }
         }
         .padding()

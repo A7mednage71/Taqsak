@@ -16,7 +16,8 @@ class HomeViewModel: ObservableObject {
     @Published var isMorning: Bool = true
     
     init() {
-       // loadWeather(for: "Dubai")
+       //loadWeather(for: "Dubai")
+        //loadWeather(for: "Tokyo")
         loadWeather(for: "Mexico City")
     }
 
