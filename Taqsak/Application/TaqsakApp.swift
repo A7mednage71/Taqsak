@@ -34,7 +34,7 @@ struct TaqsakApp: App {
             else{
                 NavigationStack {
                     HomeView()
-                }
+                }.tint(homeViewModel.isMorning ? .black : .white)
                 .environmentObject(homeViewModel)
             }
             

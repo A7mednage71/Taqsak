@@ -58,7 +58,7 @@ struct HourlyRowItem: View {
         .foregroundStyle(isMorning ? .black : .white)
         .padding(.vertical, 12)
         .padding(.horizontal, 16)
-        .background(.ultraThinMaterial.opacity(0.7))
+        .background(.ultraThinMaterial.opacity(0.75))
         .cornerRadius(14)
     }
 }

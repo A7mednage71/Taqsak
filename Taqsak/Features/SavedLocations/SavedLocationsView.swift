@@ -105,6 +105,7 @@ struct SavedLocationsView: View {
                     } label: {
                         Label("Delete", systemImage: "trash")
                     }
+                    .tint(.red)
                 }
                 .listRowInsets(EdgeInsets(top: 6, leading: 16, bottom: 6, trailing: 16))
                 .listRowBackground(Color.clear)
@@ -143,7 +144,7 @@ struct CityRow: View {
                     .font(.system(size: 20))
                     .symbolRenderingMode(.multicolor)
             }.padding()
-            .background(.ultraThinMaterial.opacity(isMorning ? 0.5 : 0.2))
+            .background(.ultraThinMaterial.opacity(0.75))
             .cornerRadius(12)
             .contentShape(Rectangle())
         }

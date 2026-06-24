@@ -31,7 +31,7 @@ struct WeatherSearchBar: View {
         }
         .padding()
         .frame(height: 50)
-        .background(.ultraThinMaterial.opacity(0.6))
+        .background(.ultraThinMaterial.opacity(0.7))
         .cornerRadius(14)
         .padding(.horizontal)
     }

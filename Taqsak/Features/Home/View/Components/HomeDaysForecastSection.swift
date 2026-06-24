@@ -57,6 +57,7 @@ struct DayForecastItem: View {
             HStack {
                 Text(dayName)
                     .frame(width: 110, alignment: .leading)
+                    .foregroundStyle(isMorning ? .black : .white)
                 
                 Spacer()
                 
@@ -72,11 +73,11 @@ struct DayForecastItem: View {
                 
                 Text(tempRange)
                     .frame(width: 100, alignment: .trailing)
+                    .foregroundStyle(isMorning ? .black : .white)
                 
             }
             .font(AppFonts.font16regular)
             .padding(.vertical, 10)
-            .foregroundStyle(isMorning ? .black : .white)
             
             if !isLast {
                 Divider()

@@ -68,16 +68,19 @@ struct WeatherGridItem: View {
             HStack {
                 Text(title)
                     .font(AppFonts.font14semibold)
-                    .opacity(0.7)
+                    .foregroundStyle(isMorning ? .black.opacity(0.7) : .white.opacity(0.7))
                 Spacer()
                 Image(systemName: iconName)
+                    .foregroundStyle(isMorning ? .black.opacity(0.6) : .white.opacity(0.6))
             }
             
             Text(value)
                 .font(AppFonts.font42bold)
+                .foregroundStyle(isMorning ? .black : .white)
             
             Text(subTitle)
                 .font(AppFonts.font14light)
+                .foregroundStyle(isMorning ? .black.opacity(0.6) : .white.opacity(0.6))
             
             Spacer(minLength: 0)
         }

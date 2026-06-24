@@ -34,11 +34,12 @@ struct PopularCitiesSection: View {
                                 Text(city.name)
                                     .font(AppFonts.font14semibold)
                                     .lineLimit(1)
+                                    .foregroundStyle(isMorning ? .black : .white)
                             }
                             .frame(maxWidth: .infinity)
                             .padding(.vertical, 10)
                             .padding(.horizontal, 8)
-                            .background(.ultraThinMaterial.opacity(0.7))
+                            .background(.ultraThinMaterial.opacity(0.75))
                             .cornerRadius(20)
                         }
                         .buttonStyle(.plain)

@@ -51,7 +51,7 @@ struct WeatherSearchResultRow: View {
                     .font(AppFonts.font16semibold)
                     .foregroundStyle(isCitySaved ? .yellow : (isMorning ? .gray : .white))
                     .padding(10)
-                    .background(.ultraThinMaterial.opacity(isMorning ? 0.6 : 0.3))
+                    .background(.ultraThinMaterial.opacity(0.7))
                     .clipShape(Circle())
             }
             .buttonStyle(.plain)
@@ -63,16 +63,17 @@ struct WeatherSearchResultRow: View {
                     VStack(alignment: .leading, spacing: 4) {
                         Text(city.name)
                             .font(AppFonts.font16semibold)
+                            .foregroundStyle(isMorning ? .black : .white)
                         
                         Text("\(city.region), \(city.country)")
                             .font(AppFonts.font13semibold)
-                            .opacity(0.7)
+                            .foregroundStyle(isMorning ? .black.opacity(0.7) : .white.opacity(0.7))
                     }
                     
                     Spacer()
                 }
                 .padding()
-                .background(.ultraThinMaterial.opacity(isMorning ? 0.5 : 0.2))
+                .background(.ultraThinMaterial.opacity(0.75))
                 .cornerRadius(12)
             }
             .buttonStyle(.plain)

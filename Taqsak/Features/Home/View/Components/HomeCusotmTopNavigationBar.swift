@@ -18,7 +18,7 @@ struct HomeCustomTopNavigationBar: View {
                     .font(.title2)
                     .foregroundStyle(homeViewModel.isMorning ? .black : .white)
                     .padding(12)
-                    .background(homeViewModel.isMorning ? Color.white.opacity(0.3) : Color.black.opacity(0.3))
+                    .background(.ultraThinMaterial.opacity(0.7))
                     .clipShape(Circle())
             }
             .buttonStyle(.plain)
@@ -35,7 +35,7 @@ struct HomeCustomTopNavigationBar: View {
                         .font(.title2)
                         .foregroundStyle(homeViewModel.isMorning ? .black : .white)
                         .padding(12)
-                        .background(homeViewModel.isMorning ? Color.white.opacity(0.3) : Color.black.opacity(0.3))
+                        .background(.ultraThinMaterial.opacity(0.7))
                         .clipShape(Circle())
                 }
                 .buttonStyle(.plain)
@@ -49,7 +49,7 @@ struct HomeCustomTopNavigationBar: View {
                     .font(.title2)
                     .foregroundStyle(homeViewModel.isMorning ? .black : .white)
                     .padding(12)
-                    .background(homeViewModel.isMorning ? Color.white.opacity(0.3) : Color.black.opacity(0.3))
+                    .background(.ultraThinMaterial.opacity(0.7))
                     .clipShape(Circle())
             }
             .buttonStyle(.plain)
