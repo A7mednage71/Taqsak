@@ -41,7 +41,7 @@ struct HomeViewHeader: View {
             .frame(width: 80, height: 80)
             
         }
-        .padding(.top, 30)
+        .padding(.top, 8)
         .foregroundStyle(isMorning ? .black : .white)
     }
 }

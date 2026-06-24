@@ -9,6 +9,7 @@ import Foundation
 import Alamofire
 
 class NetworkManager {
+    
     static let shared = NetworkManager()
     private init() {}
 
@@ -32,4 +33,22 @@ class NetworkManager {
                 }
             }
     }
+    
+    func searchCities(matching query: String, completion: @escaping (Result<[SearchCityResult], Error>) -> Void) {
+            let parameters: [String: Any] = [
+                "key": APIConstants.apiKey,
+                "q": query
+            ]
+            
+            AF.request(APIConstants.searchURL, method: .get, parameters: parameters)
+                .validate()
+                .responseDecodable(of: [SearchCityResult].self) { response in
+                    switch response.result {
+                    case .success(let cities):
+                        completion(.success(cities))
+                    case .failure(let error):
+                        completion(.failure(error))
+                    }
+                }
+        }
 }

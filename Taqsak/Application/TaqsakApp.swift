@@ -11,6 +11,7 @@ import SwiftUI
 struct TaqsakApp: App {
     
     @State private var showSplash = true
+    @StateObject private var homeViewModel = HomeViewModel()
     
     var body: some Scene {
         WindowGroup {
@@ -19,7 +20,10 @@ struct TaqsakApp: App {
                 SplashView {showSplash = false}
             }
             else{
-                HomeView()
+                NavigationStack {
+                    HomeView()
+                }
+                .environmentObject(homeViewModel)
             }
             
         }

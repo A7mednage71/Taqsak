@@ -1,0 +1,47 @@
+//
+//  HomeCustomTopNavigationBar.swift
+//  Taqsak
+//
+//  Created by Ahmed Nageh on 24/06/2026.
+//
+
+import SwiftUI
+
+struct HomeCustomTopNavigationBar: View {
+    
+    @EnvironmentObject var homeViewModel: HomeViewModel
+    
+    var body: some View {
+        HStack {
+            NavigationLink(destination: WeatherSearchView()) {
+                Image(systemName: "magnifyingglass")
+                    .font(.title2)
+                    .foregroundStyle(homeViewModel.isMorning ? .black : .white)
+                    .padding(12)
+                    .background(homeViewModel.isMorning ? Color.white.opacity(0.3) : Color.black.opacity(0.3))
+                    .clipShape(Circle())
+            }
+            .buttonStyle(.plain)
+            
+            Spacer()
+            
+            NavigationLink(destination: SavedLocationsView()) {
+                Image(systemName: "location.viewfinder")
+                    .font(.title2)
+                    .foregroundStyle(homeViewModel.isMorning ? .black : .white)
+                    .padding(12)
+                    .background(homeViewModel.isMorning ? Color.white.opacity(0.3) : Color.black.opacity(0.3))
+                    .clipShape(Circle())
+            }
+            .buttonStyle(.plain)
+        }
+        .padding(.horizontal, 20)
+        .padding(.top, 10)
+    }
+}
+
+#Preview {
+    HomeCustomTopNavigationBar()
+        .environmentObject(HomeViewModel())
+        .background(Color.blue)
+}

@@ -51,14 +51,13 @@ struct HourlyForecastView: View {
         .navigationBarTitleDisplayMode(.inline)
         .toolbarColorScheme(isMorning ? .light : .dark, for: .navigationBar)
         .tint(isMorning ? .black : .white)
-        
         .toolbar {
-                    ToolbarItem(placement: .principal) {
-                        Text(dayName)
-                            .font(AppFonts.font18medium)
-                            .foregroundStyle(isMorning ? Color.black : Color.white)
-                    }
-                }
+            ToolbarItem(placement: .principal) {
+                Text(dayName)
+                .font(AppFonts.font24bold)
+                .foregroundStyle(isMorning ? Color.black :Color.white)
+            }
+        }
     }
       
 }
