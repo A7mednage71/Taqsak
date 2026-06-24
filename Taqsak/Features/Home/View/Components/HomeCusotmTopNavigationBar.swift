@@ -25,8 +25,27 @@ struct HomeCustomTopNavigationBar: View {
             
             Spacer()
             
+            if !homeViewModel.isShowingDefaultCity {
+                Button(action: {
+                    withAnimation {
+                        homeViewModel.resetToDefaultLocation()
+                    }
+                }) {
+                    Image(systemName: "location.fill")
+                        .font(.title2)
+                        .foregroundStyle(homeViewModel.isMorning ? .black : .white)
+                        .padding(12)
+                        .background(homeViewModel.isMorning ? Color.white.opacity(0.3) : Color.black.opacity(0.3))
+                        .clipShape(Circle())
+                }
+                .buttonStyle(.plain)
+                .transition(.scale.combined(with: .opacity))
+            }
+            
+            Spacer()
+            
             NavigationLink(destination: SavedLocationsView()) {
-                Image(systemName: "location.viewfinder")
+                Image(systemName: "list.star")
                     .font(.title2)
                     .foregroundStyle(homeViewModel.isMorning ? .black : .white)
                     .padding(12)

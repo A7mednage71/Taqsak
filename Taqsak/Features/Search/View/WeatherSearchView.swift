@@ -11,6 +11,7 @@ struct WeatherSearchView: View {
     
     @StateObject private var viewModel = WeatherSearchViewModel()
     @EnvironmentObject var homeViewModel: HomeViewModel
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
             ZStack {
@@ -50,7 +51,10 @@ struct WeatherSearchView: View {
             
             WeatherSearchResultsSection(
                 results: viewModel.searchResults
-            )
+            ) { city in
+                homeViewModel.fetchWeatherForCity(city.name)
+                dismiss()
+            }
             
         } else {
             

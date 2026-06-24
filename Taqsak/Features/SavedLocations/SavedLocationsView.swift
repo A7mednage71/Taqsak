@@ -12,6 +12,7 @@ struct SavedLocationsView: View {
     
     @EnvironmentObject var homeViewModel: HomeViewModel
     @Environment(\.modelContext) private var modelContext
+    @Environment(\.dismiss) private var dismiss
     
     @Query(sort: [SortDescriptor(\SavedCity.savedAt, order: .reverse)])
     private var savedCities: [SavedCity]
@@ -87,7 +88,14 @@ struct SavedLocationsView: View {
             
             ForEach(savedCities) { city in
                 
-                CityRow(city: city, isMorning: homeViewModel.isMorning)
+                CityRow(
+                    city: city,
+                    isMorning: homeViewModel.isMorning,
+                    onTap: {
+                        homeViewModel.fetchWeatherForCity(city.name)
+                        dismiss()
+                    }
+                )
 
                 .swipeActions(edge: .trailing, allowsFullSwipe: false) {
                         
@@ -113,9 +121,10 @@ struct CityRow: View {
     
     let city: SavedCity
     let isMorning: Bool
+    let onTap: () -> Void
     
     var body: some View {
-        NavigationLink(destination: Text("Weather Details for \(city.name)")) {
+        Button(action: onTap) {
             
             HStack {
                 VStack(alignment: .leading, spacing: 4) {
@@ -133,10 +142,10 @@ struct CityRow: View {
                 Image(systemName: isMorning ? "sun.max.fill" : "moon.stars.fill")
                     .font(.system(size: 20))
                     .symbolRenderingMode(.multicolor)
-            }
+            }.padding()
+            .background(.ultraThinMaterial.opacity(isMorning ? 0.5 : 0.2))
+            .cornerRadius(12)
+            .contentShape(Rectangle())
         }
-        .padding()
-        .background(.ultraThinMaterial.opacity(isMorning ? 0.5 : 0.2))
-        .cornerRadius(12)
     }
 }

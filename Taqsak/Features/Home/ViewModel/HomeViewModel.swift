@@ -15,11 +15,15 @@ class HomeViewModel: ObservableObject {
     @Published var errorMessage: String?
     @Published var isMorning: Bool = true
     
+    var defaultCity: String = "London"
+    
+    var isShowingDefaultCity: Bool {
+        guard let currentCity = weather?.location.name else { return true }
+        return currentCity.lowercased() == defaultCity.lowercased()
+    }
+    
     init() {
-      // loadWeather(for: "Dubai")
-        //loadWeather(for: "Tokyo")
-        loadWeather(for: "London")
-       //loadWeather(for: "Mexico City")
+        loadWeather(for: defaultCity)
     }
 
     func loadWeather(for city: String) {
@@ -42,5 +46,13 @@ class HomeViewModel: ObservableObject {
                 print("❌ Error fetching weather: \(error.localizedDescription)")
             }
         }
+    }
+    
+    func fetchWeatherForCity(_ cityName: String) {
+        loadWeather(for: cityName)
+    }
+    
+    func resetToDefaultLocation() {
+        loadWeather(for: defaultCity)
     }
 }

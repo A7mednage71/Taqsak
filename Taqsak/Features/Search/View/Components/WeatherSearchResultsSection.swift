@@ -11,12 +11,13 @@ import SwiftData
 struct WeatherSearchResultsSection: View {
     
     let results: [SearchCityResult]
+    let onTap: (SearchCityResult) -> Void
     
     var body: some View {
         ScrollView(showsIndicators: false) {
             LazyVStack(spacing: 12) {
                 ForEach(results) { city in
-                    WeatherSearchResultRow(city: city)
+                    WeatherSearchResultRow(city: city, onTap: onTap)
                 }
             }
             .padding(.horizontal)
@@ -27,6 +28,7 @@ struct WeatherSearchResultsSection: View {
 struct WeatherSearchResultRow: View {
     
     let city: SearchCityResult
+    let onTap: (SearchCityResult) -> Void
     
     @EnvironmentObject var homeViewModel: HomeViewModel
     @Environment(\.modelContext) private var modelContext
@@ -56,7 +58,7 @@ struct WeatherSearchResultRow: View {
             
             Spacer().frame(width: 8)
 
-            NavigationLink(destination: Text("Weather Details for \(city.name)")) {
+            Button(action: { onTap(city) }) {
                 HStack {
                     VStack(alignment: .leading, spacing: 4) {
                         Text(city.name)
@@ -68,18 +70,15 @@ struct WeatherSearchResultRow: View {
                     }
                     
                     Spacer()
-                    
-                    Image(systemName: "chevron.right")
-                        .font(AppFonts.font14bold)
-                        .opacity(0.5)
                 }
+                .padding()
+                .background(.ultraThinMaterial.opacity(isMorning ? 0.5 : 0.2))
+                .cornerRadius(12)
             }
             .buttonStyle(.plain)
                     
     }
-        .padding()
-        .background(.ultraThinMaterial.opacity(isMorning ? 0.5 : 0.2))
-        .cornerRadius(12)
+      
     }
     
     private func toggleSave(isSaved: Bool) {
