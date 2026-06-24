@@ -49,11 +49,8 @@ struct WeatherSearchView: View {
         } else if !viewModel.searchResults.isEmpty {
             
             WeatherSearchResultsSection(
-                results: viewModel.searchResults,
-                isMorning: homeViewModel.isMorning
-            ) { city in
-                print("Selected city unique ID/URL: \(city.url)")
-            }
+                results: viewModel.searchResults
+            )
             
         } else {
             

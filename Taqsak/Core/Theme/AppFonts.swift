@@ -25,6 +25,8 @@ struct AppFonts {
     
     static let font18medium = Font.system(size: 18, weight: .medium, design: .rounded)
     
+    static let font17semibold = Font.system(size: 17, weight: .semibold, design: .rounded)
+    
     static let font16regular = Font.system(size: 16, weight: .regular, design: .rounded)
     
     static let font16semibold = Font.system(size: 16, weight: .semibold, design: .rounded)
@@ -32,6 +34,8 @@ struct AppFonts {
     static let font14semibold = Font.system(size: 14, weight: .semibold, design: .rounded)
     
     static let font14light = Font.system(size: 14 , weight: .light , design: .rounded)
+    
+    static let font14bold = Font.system(size: 14 , weight: .bold , design: .rounded)
     
     static let font13semibold = Font.system(size: 13, weight: .semibold, design: .rounded)
 }
