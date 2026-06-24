@@ -10,6 +10,10 @@
 
 **A beautiful, modern weather application built with SwiftUI**
 
+<img width="1920" height="1080" alt="Purple Pink Gradient Mobile Application Presentation" src="https://github.com/user-attachments/assets/db528172-7564-4cc2-a78c-1bb449ebac9d" />
+
+
+
 </div>
 
 ## 🌤️ Features
