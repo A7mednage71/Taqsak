@@ -15,7 +15,9 @@ class HomeViewModel: ObservableObject {
     @Published var errorMessage: String?
     @Published var isMorning: Bool = true
     
-    var defaultCity: String = "London"
+    private let locationManager = LocationManager()
+    
+    var defaultCity: String = "Alexandria"
     
     var isShowingDefaultCity: Bool {
         guard let currentCity = weather?.location.name else { return true }
@@ -23,27 +25,56 @@ class HomeViewModel: ObservableObject {
     }
     
     init() {
-        loadWeather(for: defaultCity)
+        setupLocationManager()
+        fetchLocationAndWeather()
+    }
+    
+    // MARK: - Setup Location Manager Callbacks
+    private func setupLocationManager() {
+
+        locationManager.onCityFound = { [weak self] cityName in
+            guard let self = self else { return }
+            DispatchQueue.main.async {
+                self.defaultCity = cityName
+                self.loadWeather(for: cityName)
+            }
+        }
+        
+        locationManager.onLocationFailed = { [weak self] in
+            guard let self = self else { return }
+            DispatchQueue.main.async {
+                self.loadWeather(for: self.defaultCity)
+            }
+        }
     }
 
+    func fetchLocationAndWeather() {
+        locationManager.requestLocation()
+    }
+    
+    // MARK: - Weather API Fetching
     func loadWeather(for city: String) {
-        
-        self.isLoading = true
-        self.errorMessage = nil
+        DispatchQueue.main.async {
+            self.isLoading = true
+            self.errorMessage = nil
+        }
         
         NetworkManager.shared.fetchWeatherData(for: city) { [weak self] result in
             guard let self = self else { return }
-            self.isLoading = false
             
-            switch result {
-            case .success(let data):
-                self.weather = data
-                self.isMorning = (data.current.isDay == 1)
-                print("✅ Weather data loaded successfully for: \(data.location.name)  \( self.isMorning)")
+            DispatchQueue.main.async {
+                self.isLoading = false
                 
-            case .failure(let error):
-                self.errorMessage = error.localizedDescription
-                print("❌ Error fetching weather: \(error.localizedDescription)")
+                switch result {
+                case .success(let data):
+                    self.weather = data
+                    self.isMorning = (data.current.isDay == 1)
+                    print("✅ Weather data loaded successfully for: \(data.location.name) (Morning: \(self.isMorning))")
+                    
+                case .failure(let error):
+                    self.errorMessage = error.localizedDescription
+                    print("❌ Error fetching weather: \(error.localizedDescription)")
+                }
             }
         }
     }
@@ -53,6 +84,6 @@ class HomeViewModel: ObservableObject {
     }
     
     func resetToDefaultLocation() {
-        loadWeather(for: defaultCity)
+        fetchLocationAndWeather()
     }
 }
